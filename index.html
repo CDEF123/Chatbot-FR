@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Header with buttons -->
+    <header>
+      <button id="addFriendBtn" class="button">Add Friend</button>
+      <button id="deleteFriendBtn" class="button">Delete Friend</button>
+    </header>
+
+    <!-- User number selection -->
+    <div id="userSelection" class="popup">
+      <label for="userNumber">Choose your number:</label>
+      <input type="number" id="userNumber" min="1" max="9999" placeholder="Enter number">
+      <button id="submitNumber" class="button">Submit</button>
+    </div>
+
+    <!-- Friend list -->
+    <div id="friendList" class="friend-list">
+      <h2>Friends</h2>
+      <ul id="friends"></ul>
+    </div>
+
+    <!-- Chat window -->
+    <div id="chatWindow" class="chat-window">
+      <h2>Chat</h2>
+      <div id="messages" class="messages"></div>
+      <input type="text" id="chatInput" placeholder="Type a message" />
+      <button id="sendMessage" class="button">Send</button>
+    </div>
+
+    <!-- Chat notification -->
+    <div id="notification" class="notification hidden">New Message!</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

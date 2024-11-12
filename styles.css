@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#app {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.popup {
+  padding: 20px;
+  text-align: center;
+}
+
+.friend-list, .chat-window {
+  padding: 20px;
+}
+
+.friend-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.friend-list li {
+  background-color: #f1f1f1;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.messages {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.messages div {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.messages .received {
+  background-color: #e7e7e7;
+  text-align: left;
+}
+
+.messages .sent {
+  background-color: #4caf50;
+  color: white;
+  text-align: right;
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+.notification.visible {
+  visibility: visible;
+}
+
+.hidden {
+  visibility: hidden;
+}
